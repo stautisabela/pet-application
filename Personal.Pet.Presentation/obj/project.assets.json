@@ -72,29 +72,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "Personal.Pet.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Personal.Pet.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Personal.Pet.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Personal.Pet.Application.dll": {}
-        }
-      },
-      "Personal.Pet.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Personal.Pet.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Personal.Pet.Domain.dll": {}
-        }
       }
     }
   },
@@ -223,21 +200,10 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
-    },
-    "Personal.Pet.Application/1.0.0": {
-      "type": "project",
-      "path": "../Personal.Pet.Application/Personal.Pet.Application.csproj",
-      "msbuildProject": "../Personal.Pet.Application/Personal.Pet.Application.csproj"
-    },
-    "Personal.Pet.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Personal.Pet.Domain/Personal.Pet.Domain.csproj",
-      "msbuildProject": "../Personal.Pet.Domain/Personal.Pet.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Personal.Pet.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -267,11 +233,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\40119330\\Documents\\dev\\pet-application\\Personal.Pet.Application\\Personal.Pet.Application.csproj": {
-              "projectPath": "C:\\Users\\40119330\\Documents\\dev\\pet-application\\Personal.Pet.Application\\Personal.Pet.Application.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -307,7 +269,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.307\\RuntimeIdentifierGraph.json"
       }
     }
   }

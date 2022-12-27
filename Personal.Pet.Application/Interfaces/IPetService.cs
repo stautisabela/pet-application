@@ -9,6 +9,6 @@ namespace Personal.Pet.Application.Interfaces
 {
     public interface IPetService
     {
-        async Task<Pets> GetPetsAsync(string id);
+        async Task<Domain.Entities.Pet> GetPetsAsync(string id);
     }
 }

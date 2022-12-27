@@ -15,9 +15,9 @@ namespace Personal.Pet.Application
         {
                 
         }
-        public async Task<Pets> GetPetsAsync(string id)
+        public async Task<Domain.Entities.Pet> GetPetsAsync(string id)
         {
-            var pet = new Pets
+            var pet = new Domain.Entities.Pet
             {
                 BirthDate = DateTime.Now,
                 Color = "black",
