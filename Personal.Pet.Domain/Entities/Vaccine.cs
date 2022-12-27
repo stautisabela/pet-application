@@ -8,8 +8,15 @@ namespace Personal.Pet.Domain.Entities
 {
     public class Vaccine
     {
-        public String type { get; set; }
+        public String Type { get; set; }
         public DateTime GivenDate { get; set; }
-        public DateTime BoostDate { get; set; }
+        public Nullable<DateTime> BoostDate { get; set; }
+
+        public Vaccine(string type, DateTime givenDate, Nullable<DateTime> boostDate = null)
+        {
+            Type = type;
+            GivenDate = givenDate;
+            BoostDate = boostDate;
+        }
     }
 }
